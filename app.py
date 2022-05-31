@@ -12,7 +12,7 @@ def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-@app.route('/validate-fish', methods=['GET'])
+@app.route('/healthcheck', methods=['GET'])
 def healthcheck():
     return jsonify(
                status=200,
