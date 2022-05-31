@@ -5,7 +5,7 @@ import config as conf
 
 def validaImagem(nameImage):
     IMG_SIZE = 64
-    model = load_model(conf.appDir+'\\utils\\model.h5')
+    model = load_model(conf.appDir+'/utils/model.h5')
 
     model.compile(loss='binary_crossentropy',
               optimizer='rmsprop',
